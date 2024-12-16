@@ -1,0 +1,173 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background: url('https://ibb.co/WgbL8vn') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00ffff;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  li {
+    margin-bottom: 10px;
+    writing-mode: vertical-rl; /* Vertical room names */
+    transform: rotate(180deg); /* Rotate to vertical orientation */
+  }
+  
+  button {
+    background: linear-gradient(135deg, #00ffcc, #0066ff);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #ff0099, #ff6600);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+  }
+  
+  /* Forms */
+  form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  button[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #00ffff;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  }
+  
+  button[type="submit"] {
+    background: linear-gradient(135deg, #ff6600, #ff0099);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+  }
+  
+  /* Chat Messages */
+  #chat-messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    overflow-y: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  }
+  
+  #chat-messages p {
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #chat-messages p.sent {
+    justify-content: flex-end;
+  }
+  
+  #chat-messages p.sent span {
+    background: linear-gradient(135deg, #00ffcc, #0066ff);
+    color: #fff;
+    border-radius: 15px 15px 0 15px;
+    padding: 10px;
+    max-width: 70%;
+    text-align: left;
+    word-wrap: break-word;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+  }
+  
+  #chat-messages p.received {
+    justify-content: flex-start;
+  }
+  
+  #chat-messages p.received span {
+    background: linear-gradient(135deg, #ff0099, #ff6600);
+    color: #fff;
+    border-radius: 15px 15px 15px 0;
+    padding: 10px;
+    max-width: 70%;
+    text-align: left;
+    word-wrap: break-word;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+  }
+  
+  /* Scrollbar Styling */
+  #chat-messages::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #chat-messages::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+  }
+  
+  #chat-messages::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #00ffcc, #0066ff);
+    border-radius: 5px;
+  }
+  
+  /* Favicon */
+  link[rel="icon"] {
+    href: 'https://ibb.co/WgbL8vn';
+  }
+  

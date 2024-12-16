@@ -1,0 +1,23 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "A simple chat application with room names as buttons and socket.io integration",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "socket.io": "^4.5.3"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "chat",
+    "application",
+    "express",
+    "socket.io"
+  ],
+  "author": "Hans Tech",
+  "license": "MIT"
+}
